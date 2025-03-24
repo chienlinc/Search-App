@@ -1,0 +1,16 @@
+<mat-card class="book-card">
+  @if (book.cover_i) {
+    <img
+      [src]="'https://covers.openlibrary.org/b/id/' + book.cover_i + '-M.jpg'"
+      alt="Book Cover"
+    />
+  } @else {
+    <div class="no-cover">
+      <p>No Cover Available</p>
+    </div>
+  }
+  <mat-card-content>
+    <h3>{{ book.title }}</h3>
+    <p>{{ book.author_name?.join(', ') }}</p>
+  </mat-card-content>
+</mat-card>

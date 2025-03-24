@@ -1,0 +1,27 @@
+<div class="header-container">
+  <h2>
+    <a routerLink="/" class="header-title">Book Finder</a>
+  </h2>
+  <app-search-box />
+</div>
+
+<div class="books-container">
+  @if (books$ | async; as books) {
+    @if (books?.docs && books.docs.length > 0) {
+      @for (book of books.docs; track book.key) {
+        <app-book-card [book]="book" />
+      }
+    } @else {
+      <p>No books found.</p>
+    }
+  }
+</div>
+
+@if (totalResults$ | async) {
+  <app-paginator
+    [totalResults]="(totalResults$ | async) ?? 0"
+    [pageIndex]="pageIndex"
+    [pageSize]="pageSize"
+    (pageChange)="onPageChange($event)"
+  ></app-paginator>
+}

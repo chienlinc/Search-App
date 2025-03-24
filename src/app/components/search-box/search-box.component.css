@@ -1,0 +1,13 @@
+.search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding-left: 5px;
+}
+
+mat-icon {
+  color: #4e8dfa;
+}
