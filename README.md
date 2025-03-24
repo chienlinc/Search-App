@@ -4,11 +4,11 @@ This project is an Angular application that provides a search interface to fetch
 
 ## Technologies Used
 
-Angular: For building dynamic and scalable web applications.
-RxJS: For handling asynchronous data streams.
-Angular Material: Pre-built, customizable UI components.
-TypeScript: Adds static types for better development and tooling.
-Open Library API: Access to book metadata.
+Angular: For building dynamic and scalable web applications.  
+RxJS: For handling asynchronous data streams.  
+Angular Material: Pre-built, customizable UI components.  
+TypeScript: Adds static types for better development and tooling.  
+Open Library API: Access to book metadata.  
 
 ## Features
 
